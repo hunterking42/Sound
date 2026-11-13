@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:padding="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView style="@style/SettingsSection" android:layout_marginTop="4dp" android:text="@string/admin_section_overview"/>
+        <LinearLayout
+            android:id="@+id/cardStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:minHeight="64dp"/>
+        <TextView
+            android:id="@+id/statsError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/danger"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView style="@style/SettingsSection" android:text="@string/admin_section_top"/>
+        <LinearLayout
+            android:id="@+id/cardTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+
+        <TextView style="@style/SettingsSection" android:text="@string/admin_section_tools"/>
+        <LinearLayout
+            android:id="@+id/cardTools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

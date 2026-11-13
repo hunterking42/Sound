@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/settings_title"
+            android:textColor="@color/cream"
+            android:textSize="28sp"/>
+
+        <!-- Sound -->
+        <TextView style="@style/SettingsSection" android:text="@string/settings_section_sound"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="@string/settings_volume"
+                android:textColor="@color/cream"
+                android:textSize="15sp"/>
+            <SeekBar
+                android:id="@+id/seekVolume"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:max="100"
+                android:progressTint="@color/violet"
+                android:thumbTint="@color/violet"
+                android:contentDescription="@string/settings_volume"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="@string/settings_columns"
+                android:textColor="@color/cream"
+                android:textSize="15sp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:id="@+id/columnChips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- Preferences: language, theme, vibration -->
+        <TextView style="@style/SettingsSection" android:text="@string/settings_section_prefs"/>
+        <LinearLayout
+            android:id="@+id/listPrefs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"/>
+
+        <!-- Floating bubble -->
+        <TextView style="@style/SettingsSection" android:text="@string/settings_section_overlay"/>
+        <LinearLayout
+            android:id="@+id/listOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"/>
+
+        <!-- Account -->
+        <TextView style="@style/SettingsSection" android:text="@string/settings_section_account"/>
+        <LinearLayout
+            android:id="@+id/listAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"/>
+
+        <!-- Community -->
+        <TextView style="@style/SettingsSection" android:text="@string/settings_section_community"/>
+        <LinearLayout
+            android:id="@+id/listCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"/>
+
+        <!-- About -->
+        <TextView style="@style/SettingsSection" android:text="@string/settings_section_about"/>
+        <LinearLayout
+            android:id="@+id/listAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

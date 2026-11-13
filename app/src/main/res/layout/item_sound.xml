@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The ONE sound card, reused on Home, Category, Favorites, Search -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/soundRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/bg_sound_card"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/soundImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_sound_image"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:importantForAccessibility="no"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Premium lock (free users only) -->
+        <ImageView
+            android:id="@+id/iconLock"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="4dp"
+            android:padding="7dp"
+            android:background="@drawable/bg_icon_chip"
+            android:src="@drawable/ic_lock"
+            android:tint="@color/gold_fixed"
+            android:contentDescription="@string/cd_premium_locked"
+            app:layout_constraintStart_toStartOf="@id/soundImage"
+            app:layout_constraintTop_toTopOf="@id/soundImage"/>
+
+        <!-- Favorite toggle: 48dp touch target, 24dp icon -->
+        <ImageView
+            android:id="@+id/btnFavorite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_heart_outline"
+            android:tint="@color/on_fuse"
+            android:background="@drawable/bg_icon_chip_inset"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintEnd_toEndOf="@id/soundImage"
+            app:layout_constraintTop_toTopOf="@id/soundImage"/>
+
+        <TextView
+            android:id="@+id/badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/on_fuse"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-medium"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/soundImage"
+            app:layout_constraintBottom_toBottomOf="@id/soundImage"/>
+
+        <!-- Spinner while the audio downloads on first tap -->
+        <ProgressBar
+            android:id="@+id/loading"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:indeterminateTint="@color/volt"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/soundImage"
+            app:layout_constraintEnd_toEndOf="@id/soundImage"
+            app:layout_constraintTop_toTopOf="@id/soundImage"
+            app:layout_constraintBottom_toBottomOf="@id/soundImage"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/soundName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/cream"
+        android:textSize="12sp"/>
+</LinearLayout>

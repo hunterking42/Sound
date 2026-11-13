@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme: the default look of the app ("The Fuse") -->
+    <color name="ink">#120E2B</color>
+    <color name="plum">#1E1840</color>
+    <color name="plum_light">#2A2257</color>
+    <color name="violet">#7B5CFF</color>
+    <color name="spark">#FF5C8A</color>
+    <color name="volt">#35E0FF</color>
+    <color name="cream">#F4F0FF</color>
+    <color name="mist">#A9A1D6</color>
+    <color name="gold">#FFC94A</color>
+    <color name="danger">#FF4D6A</color>
+    <color name="success">#3DDC97</color>
+</resources>

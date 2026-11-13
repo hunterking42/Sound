@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 36dp visible pill inside a 48dp touch target (inset keeps the target tall) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <inset android:insetTop="6dp" android:insetBottom="6dp">
+            <shape android:shape="rectangle"><solid android:color="@color/violet"/><corners android:radius="18dp"/></shape>
+        </inset>
+    </item>
+    <item>
+        <inset android:insetTop="6dp" android:insetBottom="6dp">
+            <shape android:shape="rectangle"><solid android:color="@color/plum"/><corners android:radius="18dp"/></shape>
+        </inset>
+    </item>
+</selector>

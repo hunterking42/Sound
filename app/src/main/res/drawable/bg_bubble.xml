@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Floating bubble: fuse gradient circle. Activated (a sound is playing) = volt glow ring. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape android:shape="oval">
+            <gradient android:angle="315" android:startColor="@color/violet" android:endColor="@color/spark"/>
+            <stroke android:width="3dp" android:color="@color/volt"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <gradient android:angle="315" android:startColor="@color/violet" android:endColor="@color/spark"/>
+        </shape>
+    </item>
+</selector>

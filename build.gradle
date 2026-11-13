@@ -1,0 +1,4 @@
+// Top-level build file. Open this folder in Android Studio (it creates the Gradle wrapper for you).
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}

@@ -1,0 +1,11 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+/build/
+/app/build/
+.DS_Store
+# NEVER commit these. Back up the keystore somewhere safe: without it you can never update the app.
+keystore.properties
+*.jks
+*.keystore

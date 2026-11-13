@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/searchBox"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                android:tint="@color/mist"
+                android:importantForAccessibility="no"/>
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:background="@null"
+                android:hint="@string/hint_search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/cream"
+                android:textColorHint="@color/mist"
+                android:textSize="15sp"/>
+            <ImageView
+                android:id="@+id/btnClear"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_close"
+                android:tint="@color/mist"
+                android:contentDescription="@string/cd_clear_search"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <!-- Notifications bell with an unread dot -->
+        <FrameLayout
+            android:id="@+id/bellBox"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/cd_notifications"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bell"
+                android:tint="@color/cream"
+                android:importantForAccessibility="no"/>
+            <View
+                android:id="@+id/bellDot"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_dot_unread"
+                android:contentDescription="@string/cd_unread_dot"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Recent searches (only while the box is focused and empty) -->
+    <HorizontalScrollView
+        android:id="@+id/recentsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:scrollbars="none"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/recentsRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+    <!-- Banner slider: hidden until banners arrive, and while searching -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/bannerPager"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="gone"/>
+
+    <!-- All / Trending / New -->
+    <HorizontalScrollView
+        android:id="@+id/sortScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/sortRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+</LinearLayout>

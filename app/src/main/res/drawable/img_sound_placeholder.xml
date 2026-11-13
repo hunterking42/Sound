@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shown while Glide loads and when the image fails -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="rectangle"><solid android:color="@color/plum_light"/></shape></item>
+    <item android:gravity="center" android:width="32dp" android:height="32dp">
+        <vector android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24"
+            android:tint="@color/mist">
+            <path android:fillColor="#FFFFFFFF" android:pathData="M3,10h2v4H3zM7,6h2v12H7zM11,3h2v18h-2zM15,7h2v10h-2zM19,10h2v4h-2z"/>
+        </vector>
+    </item>
+</layer-list>

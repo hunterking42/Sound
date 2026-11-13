@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared by LoginActivity and SignupActivity -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ink"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_wave"
+            android:tint="@color/violet"
+            android:importantForAccessibility="no"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/cream"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/mist"
+            android:textSize="15sp"/>
+
+        <!-- Username -->
+        <LinearLayout
+            android:id="@+id/boxUsername"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_user"
+                android:tint="@color/mist"
+                android:importantForAccessibility="no"/>
+            <EditText
+                android:id="@+id/inputUsername"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:autofillHints="username"
+                android:background="@null"
+                android:hint="@string/hint_username"
+                android:inputType="textNoSuggestions"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textColor="@color/cream"
+                android:textColorHint="@color/mist"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Password -->
+        <LinearLayout
+            android:id="@+id/boxPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_key"
+                android:tint="@color/mist"
+                android:importantForAccessibility="no"/>
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:autofillHints="password"
+                android:background="@null"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/cream"
+                android:textColorHint="@color/mist"
+                android:textSize="15sp"/>
+            <ImageView
+                android:id="@+id/btnEye"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_eye_off"
+                android:tint="@color/mist"
+                android:contentDescription="@string/cd_show_password"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+
+        <!-- One clear message: what happened and what to do -->
+        <TextView
+            android:id="@+id/errorMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/danger"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_gradient_fuse"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="false"
+            android:textColor="@color/on_fuse"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/btnSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="@color/volt"
+            android:textSize="15sp"
+            android:background="?attr/selectableItemBackground"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tablets: 5 columns by default -->
+<resources><integer name="grid_default_columns">5</integer></resources>

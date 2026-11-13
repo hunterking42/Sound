@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light theme tokens (used when the app is in light mode). Dark values live in values-night. -->
+    <color name="ink">#F6F3FF</color>
+    <color name="plum">#FFFFFF</color>
+    <color name="plum_light">#E6E0FA</color>
+    <color name="violet">#6B4CF0</color>
+    <color name="spark">#E03A76</color>
+    <color name="volt">#087A99</color>
+    <color name="cream">#1B1740</color>
+    <color name="mist">#5E5890</color>
+    <color name="gold">#9A6B00</color>
+    <color name="danger">#C72D4B</color>
+    <color name="success">#1F9E6A</color>
+
+    <!-- Same in both themes -->
+    <color name="on_fuse">#FFFFFF</color>          <!-- text and icons on the violet-pink gradient, badges, avatars -->
+    <color name="brand_ink">#120E2B</color>        <!-- launcher icon background -->
+    <color name="gold_fixed">#FFC94A</color>       <!-- crown/lock drawn over sound images -->
+</resources>

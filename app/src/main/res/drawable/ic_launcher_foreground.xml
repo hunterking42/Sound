@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Same artwork, scaled to stay inside the adaptive-icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <group android:scaleX="0.8" android:scaleY="0.8" android:pivotX="54" android:pivotY="54">
+    <path android:pathData="M32,64a22,22 0 1,0 44,0a22,22 0 1,0 -44,0z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="34" android:startY="44" android:endX="74" android:endY="86"
+                android:startColor="#7B5CFF" android:endColor="#FF5C8A"/>
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#A9A1D6" android:pathData="M46,38h16v8h-16z"/>
+    <path android:strokeColor="#F4F0FF" android:strokeWidth="3" android:strokeLineCap="round"
+        android:pathData="M54,38C54,30 62,32 66,24"/>
+    <path android:strokeColor="#F4F0FF" android:strokeAlpha="0.5" android:strokeWidth="3" android:strokeLineCap="round"
+        android:pathData="M40,58a14,14 0 0,1 10,-8"/>
+    <path android:fillColor="#35E0FF" android:pathData="M68,14L70,20L76,22L70,24L68,30L66,24L60,22L66,20z"/>
+    <path android:fillColor="#F4F0FF" android:pathData="M68,19.5a2.5,2.5 0 1,0 0.01,0z"/>
+    </group>
+</vector>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 32dp dark circle inside a 48dp touch target, so the heart is readable on any image -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:inset="8dp">
+    <shape android:shape="oval"><solid android:color="#99120E2B"/></shape>
+</inset>

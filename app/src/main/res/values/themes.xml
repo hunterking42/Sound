@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Follows the app's day/night mode. The app starts in dark and the user can change it in Settings. -->
+    <style name="Base.Theme.SoundBomb" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/violet</item>
+        <item name="colorOnPrimary">@color/on_fuse</item>
+        <item name="colorSecondary">@color/volt</item>
+        <item name="colorSurface">@color/plum</item>
+        <item name="colorOnSurface">@color/cream</item>
+        <item name="android:windowBackground">@color/ink</item>
+        <item name="android:statusBarColor">@color/ink</item>
+        <item name="android:navigationBarColor">@color/plum</item>
+        <item name="android:windowLightStatusBar">@bool/light_bars</item>
+        <item name="android:textColorPrimary">@color/cream</item>
+        <item name="android:textColorSecondary">@color/mist</item>
+        <!-- Keep plain Buttons/EditTexts so our gradient and input backgrounds are respected -->
+        <item name="viewInflaterClass">androidx.appcompat.app.AppCompatViewInflater</item>
+    </style>
+
+    <style name="Theme.SoundBomb" parent="Base.Theme.SoundBomb"/>
+
+    <!-- Small section label on the Settings screen (sentence case, caption size) -->
+    <style name="SettingsSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/mist</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>
